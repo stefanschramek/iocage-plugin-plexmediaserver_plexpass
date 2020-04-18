@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sysrc -f /etc/rc.conf plexmediaserver_plexpass_support_path="/"
+sysrc -f /etc/rc.conf plexmediaserver_plexpass_support_path="/config"
 # Configure tmp directory used for the transcoding process
 sysrc -f /etc/rc.conf plexmediaserver_plexpass_tmp="/var/tmp/plex"
 
