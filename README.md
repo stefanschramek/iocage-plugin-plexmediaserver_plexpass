@@ -39,10 +39,6 @@ Sabnzbd = 350
 Sonarr = 351
 Transmission = 921
 ```
-### Stop the services
-```
-iocage exec jail_name "service sonarr stop"
-```
 ### Start the services
 ```
 iocage exec jail_name "service plexmediaserver_plexpass start"
