@@ -7,8 +7,8 @@ iocage exec jail_name "service plexmediaserver_plexpass stop"
 ```
 ### Add mount points
 ```
-mkdir "/mnt/pool-1/iocage/jails/jail_name/root/usr/local/plexdata-plexpass/Plex Media Server"
-iocage fstab -a jail_name /mnt/pool-1/apps/plexmediaserver "/usr/local/plexdata-plexpass/Plex Media Server" nullfs rw 0 0
+mkdir "/mnt/pool-1/iocage/jails/jail_name/root/config/Plex Media Server"
+iocage fstab -a jail_name /mnt/pool-1/apps/plexmediaserver "/config/Plex Media Server" nullfs rw 0 0
 mkdir /mnt/pool-1/iocage/jails/jail_name/root/media/movies
 iocage fstab -a jail_name /mnt/pool-1/media/movies /media/movies nullfs rw 0 0
 mkdir /mnt/pool-1/iocage/jails/jail_name/root/media/tvshows
