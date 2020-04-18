@@ -7,15 +7,15 @@ iocage exec jail_name "service plexmediaserver_plexpass stop"
 ```
 ### Add mount points
 ```
-mkdir "/mnt/pool-1/iocage/jails/jail_name/root/config/Plex Media Server"
+mkdir -p "/mnt/pool-1/iocage/jails/jail_name/root/config/Plex Media Server"
 iocage fstab -a jail_name /mnt/pool-1/apps/plexmediaserver "/config/Plex Media Server" nullfs rw 0 0
-mkdir /mnt/pool-1/iocage/jails/jail_name/root/media/movies
+mkdir -p /mnt/pool-1/iocage/jails/jail_name/root/media/movies
 iocage fstab -a jail_name /mnt/pool-1/media/movies /media/movies nullfs rw 0 0
-mkdir /mnt/pool-1/iocage/jails/jail_name/root/media/tvshows
+mkdir -p /mnt/pool-1/iocage/jails/jail_name/root/media/tvshows
 iocage fstab -a jail_name /mnt/pool-1/media/tvshows /media/tvshows nullfs rw 0 0
-mkdir /mnt/pool-1/iocage/jails/jail_name/root/media/music
+mkdir -p /mnt/pool-1/iocage/jails/jail_name/root/media/music
 iocage fstab -a jail_name /mnt/pool-1/media/music /media/music nullfs rw 0 0
-mkdir /mnt/pool-1/iocage/jails/jail_name/root/media/photos
+mkdir -p /mnt/pool-1/iocage/jails/jail_name/root/media/photos
 iocage fstab -a jail_name /mnt/pool-1/media/photos /media/photos nullfs rw 0 0
 ```
 ### Add permissions using FreeNAS 11.3 ACL manager
